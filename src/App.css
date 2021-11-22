@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+
+.header__logo {
+  height: 30px;
+}
+
+.app__page {
+  display: flex;
+}
