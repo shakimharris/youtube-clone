@@ -1,0 +1,41 @@
+.header {
+display: flex;
+padding: 20px;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 100;
+background-color: white;
+}
+
+.logo {
+height: 25px;
+object-fit: contain;
+margin-left: 20px;
+}
+
+.header-center {
+display: flex;
+align-items: center;
+width: 40%;
+border: 1px solid lightgrey;
+}
+
+.header-center > input {
+    flex: 1;
+    border: none;
+}
+.search-icon {
+    background-color: #fafafa;
+    width: 50px !important;
+    border-left: 1px solid lightgrey;
+}
+
+.header-right {
+margin-right: 8px;
+}
+.header-icon {
+    padding: 0px 20px 0px 0px;
+}
+
