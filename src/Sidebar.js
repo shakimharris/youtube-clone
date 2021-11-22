@@ -12,7 +12,6 @@ export default function Sidebar(){
             <SidebarRow Icon={HomeIcon} title="Home" />
             <SidebarRow Icon={SubscriptionsIcon} title="Subscriptions" />
             <SidebarRow Icon ={WhatshotIcon} title="Trending" />
-            <SidebarRow title="Recommended" />
         </div>
     )
 }
