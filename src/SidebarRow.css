@@ -4,12 +4,23 @@
     padding: 10px 20px;
 }
 
+.sidebar > hr {
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .sidebar__row:hover {
     background-color: lightgray;
     cursor: pointer;
 }
 .sidebar__row:hover > .sidebar__icon {
     color: blue;
+}
+.sidebar__row:hover > .sidebar__title {
+    font-weight: bold;
 }
 
 .sidebar__title {
@@ -20,9 +31,21 @@ font-weight: 500;
 
 }
 
-.sidebar_icon {
-    color: #606060;
+.sidebar__icon {
+    color: blue;
     font-size: large !important;
 
+}
+
+.sidebar__row.selected {
+    background-color: lightgrey;
+}
+
+.sidebar_row.selected > .sidebar__icon {
+    color: blue;
+}
+
+.sidebar_row.selected > .sidebar__title {
+    font-weight: bold;
 }
 
