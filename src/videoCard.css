@@ -1,0 +1,13 @@
+.videoCard {
+width: 270px;
+margin-bottom: 40px;
+}
+
+.thumbnail__image {
+height: 140px;
+width: 250px;
+}
+
+.video-details {
+display: flex;
+}
