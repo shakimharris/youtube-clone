@@ -2,27 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Recommended from './Recommended';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Search from './pages/Search';
+import SignIn from './pages/SignIn';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Header />
-       <Switch>
-         <Route path="/">
-         <div className="app__page">
-          <Sidebar />
-           <Recommended />
-           </div>
-          </Route>
-         <Route path="/search">
-           <h1>This is the search page.</h1>
-           </Route>
-           </Switch>
-           </Router>
-           </div>
+      <Router>
+        <Header />
+        <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/signin" element={<SignIn />} />
+           </Routes>
+             </Router>
+          </div>
   );
 }
 
