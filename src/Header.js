@@ -14,8 +14,10 @@ function Header () {
         <div className="header">
             <div className="header-left">
              <MenuIcon />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" className="logo" />
-              </div>
+              <Link to="/">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" className="logo" />
+                </Link>
+                </div>
                 <div className="header-center">
                  <input value={searchInput} onChange={e => setSearchInput(e.target.value)} placeholder="Search" type="text" />
                   <Link to={`/search/${searchInput}`}>
