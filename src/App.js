@@ -16,7 +16,8 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/signin" element={<SignIn />} />
+           <Route path="/signin" element={<SignIn />} />
+           <Route path="/search/:searchterm" element={<Search />} />
            </Routes>
              </Router>
           </div>
