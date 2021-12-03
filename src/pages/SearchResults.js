@@ -1,6 +1,7 @@
 import React from 'react';
 import ChannelRow from '../ChannelRow';
 import FilterListIcon from '@mui/icons-material/FilterList';
+import '../SearchResults.css';
 
 
 
@@ -8,7 +9,7 @@ function SearchResults() {
     return (
         <div className="searchResults">
              <div className="filterResults">
-                 <FilterListIcon />
+                 <FilterListIcon className="filter__icon" />
                     <h2>FILTER</h2>
                     </div>
                      <hr />

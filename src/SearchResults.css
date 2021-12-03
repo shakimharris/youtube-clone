@@ -1,5 +1,20 @@
-.searchResults {
-    border: 1px solid black;
+.filterResults {
     flex: 0.8;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+.filter__icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filterResults > h2 {
+    color: #606060;
+    font-size: xx-small !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
