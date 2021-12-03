@@ -1,0 +1,22 @@
+.channelrow {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.channel__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel__text > h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channel__image {
+    width: 140px !important;
+    height: 140px !important;
+    margin: 10px 60px;
+}

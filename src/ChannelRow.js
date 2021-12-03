@@ -1,7 +1,9 @@
 import React from 'react';
 import './ChannelRow.css';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Avatar from '@mui/material/Avatar';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+
+
 function ChannelRow({
     image,
     subCount,
@@ -12,7 +14,7 @@ function ChannelRow({
     }) {
         return (
             <div className="channelrow">
-                <AccountCircleIcon className="circle__icon" alt={channel} src={image} />
+                <Avatar className="channel__image" src={image} />
                  <div className="channel__text">
                      <h4>
                      {channel} {verified && <VerifiedUserIcon />}    
